@@ -14,6 +14,12 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
+        
+        stage('Build Docker image'){
+			steps{
+				bat 'docker build -t jenkins-demo .'
+			}
+		}
 
     }
 }
