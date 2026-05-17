@@ -8,6 +8,6 @@ public class MyController {
 
 	@GetMapping("/greet")
 	public String greet() {
-		return "WELCOME TO SPRING BOOT WITH JENKINS CI pipeline";
+		return "Finally CI / CD completed...";
 	}
 }
